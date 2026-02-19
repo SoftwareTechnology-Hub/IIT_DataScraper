@@ -294,7 +294,7 @@ class CardFrame(ctk.CTkFrame):
                          text_color=P["TMED"], anchor="w").pack(side="left", padx=16)
             self._badge = ctk.CTkLabel(hdr, text=badge, font=F_XS, text_color=P["TXLT"])
             self._badge.pack(side="right", padx=16)
-            ctk.CTkFrame(self, height=2, fg_color=P["SEP_CLR"], corner_radius=0).pack(fill="x")
+            ctk.CTkFrame(self, height=1, fg_color=P["BDR"], corner_radius=0).pack(fill="x")
 
     def set_badge(self, text):
         if hasattr(self, "_badge"):
